@@ -1,14 +1,15 @@
 <template>
   <nav>
     <span>
-      <a class="main" href="/">TwitchBot</a>
+      <router-link class="main" to="/">TwitchBot</router-link>
     </span>
     <span class="links">
       <a href="/#features" no-mobile>Features</a>
-      <a href="/pro" no-mobile class="premium">Pro</a>
+      <router-link to="/pro" no-mobile class="premium">Pro</router-link>
       <a href="https://support.twitchbot.io" no-mobile>Support</a>
       <a href="https://dash.twitchbot.io" no-mobile>Dashboard</a>
     </span>
+    <div class="flex-spacer"></div>
     <span class="right">
       <a href="https://twitter.com/twitchbot_io" target="_blank" title="Twitter account">
         <FontAwesomeIcon :icon="['fab', 'twitter']" />
@@ -28,6 +29,9 @@
 nav {
   background-color: #54338C;
   padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 nav a {
@@ -46,8 +50,8 @@ nav .links a {
   padding-left: 12px;
 }
 
-nav .right {
-  float: right;
+nav .flex-spacer {
+  flex: auto 1 1;
 }
 
 nav .right a {

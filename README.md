@@ -1,4 +1,4 @@
-# twitchbot.io-vue
+# twitchbot.io Vue
 
 ## Project setup
 ```

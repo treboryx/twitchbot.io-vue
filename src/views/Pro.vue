@@ -26,13 +26,13 @@
         <FeatureCard title="Listen to streams faster" icon="room-sound">
           Skip upvoting when you listen to streams with TwitchBot.
         </FeatureCard>
-        <FeatureCard title="Moderation commands" icon="closed-topic" icon-alt="Twitch logo">
+        <FeatureCard title="Moderation commands" icon="closed-topic">
           Keep your server squeaky clean with quick and easy moderation commands, a must-have for any public community.
         </FeatureCard>
-        <FeatureCard title="Access to beta features" icon="key-security" icon-alt="Twitch logo">
+        <FeatureCard title="Access to beta features" icon="key-security">
           Be one of the first users to try out and test cutting-edge features for TwitchBot.
         </FeatureCard>
-        <FeatureCard title="Some extra goodies" icon="facebook-like" icon-alt="Twitch logo">
+        <FeatureCard title="Some extra goodies" icon="facebook-like">
           Get a colorful role in our Discord server to show your support, along with a private Pro announcements channel.
         </FeatureCard>
       </FeatureCardList>
@@ -40,7 +40,7 @@
     <AccentedArea>
       <div class="section">
         <h2 style="text-align:center">Choose the right plan for you</h2>
-        <FeatureCardList style="justify-content:space-evenly;align-items:flex-start">
+        <FeatureCardList style="justify-content:center;align-items:flex-start">
           <PricingCard tier-name="TwitchBot Pro 1x" price="2.50" rid="3677518">
             <span>
               <FontAwesomeIcon icon="check" />

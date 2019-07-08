@@ -1,14 +1,14 @@
 <template>
   <div class="p-card">
     <h4>{{ tierName }}</h4>
-    <span class="price">
+    <span class="price" v-if="!hidePrice">
       ${{ price }}
       <small>/ Month</small>
     </span>
     <div class="features">
       <slot></slot>
     </div>
-    <Button shine="true" :href="'https://www.patreon.com/join/devakira/checkout?rid=' + rid">
+    <Button v-if="!hidePrice" shine="true" :href="'https://www.patreon.com/join/devakira/checkout?rid=' + rid">
       Select tier
     </Button>
   </div>
@@ -69,6 +69,6 @@ export default {
   components: {
     Button
   },
-  props: ['price', 'tierName', 'rid']
+  props: ['price', 'tierName', 'rid', 'hidePrice']
 }
 </script>

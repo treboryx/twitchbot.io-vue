@@ -94,7 +94,6 @@
           </Button>
         </p>
       </div>
-      <PageFooter />
     </AccentedArea>
   </div>
 </template>
@@ -171,7 +170,6 @@ import Button from '@/components/Button.vue'
 import CarbonAd from '@/components/CarbonAd.vue'
 import FeatureCard from '@/components/FeatureCard.vue'
 import FeatureCardList from '@/components/FeatureCardList.vue'
-import PageFooter from '@/components/PageFooter.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import PartnerImage from '@/components/PartnerImage.vue'
 import Slick from 'vue-slick'
@@ -185,7 +183,6 @@ export default {
     CarbonAd,
     FeatureCard,
     FeatureCardList,
-    PageFooter,
     PageHeader,
     PartnerImage,
     Slick,

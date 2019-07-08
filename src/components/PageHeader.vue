@@ -19,10 +19,10 @@ header {
 header .header-container {
     max-width: calc(700px + 2rem);
     padding: 3em 1rem 0 1rem;
+    margin: auto;
 }
 
 .index-header .header-container {
-    margin: auto;
     max-width: 1000px;
     display: flex;
     flex-direction: row;

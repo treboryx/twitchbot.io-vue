@@ -2,6 +2,7 @@
   <div id="app">
     <NavBar />
     <router-view />
+    <PageFooter />
   </div>
 </template>
 
@@ -83,11 +84,13 @@ h3 {
 <script>
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue'
+import PageFooter from '@/components/PageFooter.vue'
 
 export default {
   name: 'app',
   components: {
-    NavBar
+    NavBar,
+    PageFooter
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <a class="button" :class="{'default': this.default == 'true', 'shine-btn': this.shine == 'true'}">
+  <a :class="{'button': this.inset !== 'true', 'inset-button': this.inset == 'true', 'default': this.default == 'true', 'shine-btn': this.shine == 'true'}">
     <slot></slot>
     <span v-if="this.shine == 'true'" class="shine"></span>
   </a>
@@ -50,6 +50,7 @@
 }
 
 .inset-button {
+  cursor: pointer;
   margin: 6px 8px;
   padding: 12px 0;
   color: rgba(255,255,255,.6);
@@ -64,6 +65,6 @@
 
 <script>
 export default {
-  props: ['default', 'shine']
+  props: ['default', 'shine', 'inset']
 }
 </script>

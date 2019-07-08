@@ -30,7 +30,17 @@ const router = new Router({
       name: 'about',
       component: () => import('./views/About.vue')
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    console.log(to)
+    if (to.hash) {
+      return { selector: to.hash }
+    } else if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })
 
 router.beforeEach((to, from, next) => {

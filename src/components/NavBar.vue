@@ -67,3 +67,18 @@ nav .nav-sep {
   margin-left: 12px;
 }
 </style>
+
+<script>
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faCaretDown, faTwitter, faDiscord)
+
+export default {
+  components: {
+    FontAwesomeIcon
+  }
+}
+</script>

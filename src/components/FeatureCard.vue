@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .card {
   flex: 0 0 335px;
   padding: 1rem 0;
@@ -23,10 +23,26 @@
   line-height: 1.2;
 }
 
+.card a {
+  text-decoration: underline;
+}
+
 .card img {
   height: 48px;
   width: 48px;
 }
+
+@media screen and (max-width: 720px) {
+    .card {
+        text-align: center;
+        flex: 1 1 auto;
+    }
+
+    .card img {
+      margin: auto;
+    }
+}
+
 </style>
 
 <script>

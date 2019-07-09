@@ -8,12 +8,13 @@
         <BrandIcon brand="patreon" title="Patreon page" href="https://patreon.com/devakira" />
         <BrandIcon brand="github" title="GitHub organization" href="https://github.com/twitchbot-discord" />
         <BrandIcon brand="twitter" title="Twitter page" href="https://twitter.com/twitchbot_io" />
+        <BrandIcon brand="medium" title="Medium blog" href="https://medium.com/twitchbot" />
       </span>
       <span class="disclaimer">
         Copyright © <a href="https://akira.arraycord.dev" target="_blank">Akira</a>, 2017-2019.
-        TwitchBot is not affiliated with Twitch Interactive, Inc.
+        TwitchBot is not operated by or affiliated with Twitch Interactive, Inc.
         <br>
-        Icons provided by icons8.com.
+        Certain images provided by Icons8 and MaterialDesignIcons.
         <br><br>
         <a href="/privacy">Privacy Policy</a>
         &nbsp;&middot;&nbsp;

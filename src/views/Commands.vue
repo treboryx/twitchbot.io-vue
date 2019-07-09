@@ -46,9 +46,11 @@
           </span>
         </summary>
         <div class="quote info">
-          <FontAwesomeIcon icon="info-circle" />
-          Want an easier way to manage notifications?
-          Try out the <a href="https://dash.twitchbot.io/servers" target="_blank">dashboard</a>!
+          <InfoIcon />
+          <span>
+            Want an easier way to manage notifications?
+            Try out the <a href="https://dash.twitchbot.io/servers" target="_blank">dashboard</a>!
+          </span>
         </div>
         <table>
           <tr><th>Command</th><th>Description</th></tr>
@@ -75,9 +77,11 @@
           </span>
         </summary>
         <div class="quote info">
-          <FontAwesomeIcon icon="info-circle" />
-          Want an easier way to manage live role?
-          Try out the <a href="https://dash.twitchbot.io/servers" target="_blank">dashboard</a>!
+          <InfoIcon />
+          <span>
+            Want an easier way to manage live role?
+            Try out the <a href="https://dash.twitchbot.io/servers" target="_blank">dashboard</a>!
+          </span>
         </div>
         <table>
           <tr><th>Command</th><th>Description</th></tr>
@@ -208,10 +212,14 @@ td:not(:last-of-type) {
   background-color: #12191f;
   border-radius: 5px;
   margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .quote svg {
   margin-right: 3px;
+  margin-top: 3px;
 }
 
 .quote.info svg {
@@ -231,16 +239,12 @@ td:not(:last-of-type) {
 import CarbonSidebar from '@/components/CarbonSidebar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faInfoCircle)
+import InfoIcon from 'mdi/Information.vue'
 
 export default {
   components: {
     CarbonSidebar,
-    FontAwesomeIcon,
+    InfoIcon,
     PageHeader
   }
 }

@@ -12,14 +12,14 @@
       <div class="flex-spacer"></div>
       <span class="right">
         <a href="https://twitter.com/twitchbot_io" target="_blank" title="Twitter account">
-          <FontAwesomeIcon :icon="['fab', 'twitter']" />
+          <TwitterIcon :size="16" />
         </a>
         <a href="https://discord.gg/UNYzJqV" target="_blank" title="Discord server">
-          <FontAwesomeIcon :icon="['fab', 'discord']" />
+          <DiscordIcon :size="16" />
         </a>
         <div class="nav-sep"></div>
         <a @click="toggleMenu()" title="More links" id="more-links">
-          <FontAwesomeIcon icon="caret-down" />
+          <ChevronDownIcon :size="16" />
         </a>
       </span>
     </nav>
@@ -74,17 +74,16 @@ nav .nav-sep {
 <script>
 import LinksMenu from '@/components/LinksMenu.vue'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faCaretDown, faTwitter, faDiscord)
+import ChevronDownIcon from 'mdi/ChevronDown.vue'
+import DiscordIcon from 'mdi/Discord.vue'
+import TwitterIcon from 'mdi/Twitter.vue'
 
 export default {
   components: {
-    FontAwesomeIcon,
-    LinksMenu
+    ChevronDownIcon,
+    DiscordIcon,
+    LinksMenu,
+    TwitterIcon
   },
   data () {
     return {

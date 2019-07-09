@@ -31,6 +31,11 @@ const router = new Router({
       component: () => import('./views/Commands.vue')
     },
     {
+      path: '/languages',
+      name: 'languages',
+      component: () => import('./views/Languages.vue')
+    },
+    {
       path: '/partners',
       name: 'partners',
       component: () => import('./views/Partners.vue')

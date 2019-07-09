@@ -57,6 +57,11 @@
   font-size: .9em;
 }
 
+.inset-button .material-design-icon {
+  position: relative;
+  top: 6px;
+}
+
 @keyframes slide {
   0% {transform:translateX(-100%);}
   35% {transform:translateX(100%);}

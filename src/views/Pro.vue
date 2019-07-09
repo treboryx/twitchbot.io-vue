@@ -9,7 +9,7 @@
             $2.50 / Month
           </Button>
           <Button inset="true" v-scroll-to="'#content'">
-            Learn about Pro <FontAwesomeIcon icon="arrow-down" />
+            Learn about Pro <ArrowDownIcon />
           </Button>
         </p>
       </div>
@@ -43,17 +43,17 @@
         <FeatureCardList style="justify-content:center;align-items:flex-start">
           <PricingCard tier-name="TwitchBot Pro 1x" price="2.50" rid="3677518">
             <span>
-              <FontAwesomeIcon icon="check" />
+              <CheckIcon fillColor="#43b581" />
               Everything listed above
             </span>
           </PricingCard>
           <PricingCard tier-name="TwitchBot Pro 3x" price="5" rid="2706211">
             <span>
-              <FontAwesomeIcon icon="check" />
+              <CheckIcon fillColor="#43b581" />
               Everything listed above
             </span>
             <span>
-              <FontAwesomeIcon icon="check" />
+              <CheckIcon fillColor="#43b581" />
               Pro bot in 3 servers
             </span>
           </PricingCard>
@@ -80,19 +80,17 @@ import FeatureCardList from '@/components/FeatureCardList.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import PricingCard from '@/components/PricingCard.vue'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheck, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faCheck, faArrowDown)
+import CheckIcon from 'mdi/Check.vue'
+import ArrowDownIcon from 'mdi/ArrowDown.vue'
 
 export default {
   components: {
     AccentedArea,
+    ArrowDownIcon,
     Button,
+    CheckIcon,
     FeatureCard,
     FeatureCardList,
-    FontAwesomeIcon,
     PageHeader,
     PricingCard
   }

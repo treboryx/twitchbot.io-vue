@@ -44,13 +44,13 @@
 .p-card .features span {
     font-size: .9rem;
     color: rgba(255,255,255,.9);
-    display: block;
+    display: inline-block;
     margin-bottom: .25rem;
 }
 
-.p-card .features span svg {
-    color: rgb(67,181,129);
-    margin-right: 5px;
+.p-card .features span .material-design-icon {
+  position: relative;
+  top: 6px;
 }
 
 .p-card .button {

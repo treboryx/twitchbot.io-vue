@@ -20,9 +20,9 @@
 
 .sidebar-incl aside {
   flex: auto 0 0;
-  margin-right: 1rem;
+  margin: 1rem 1rem 0 0;
   position: sticky;
-  top: 16px;
+  top: 1rem;
 }
 
 .sidebar-incl .content {

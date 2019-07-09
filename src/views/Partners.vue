@@ -8,7 +8,7 @@
           Apply Now
         </Button>
         <Button inset="true" v-scroll-to="'#content'">
-          Learn about Partners <FontAwesomeIcon icon="arrow-down" />
+          Learn about Partners <ArrowDownIcon />
         </Button>
       </p>
     </PageHeader>
@@ -46,69 +46,69 @@
       <FeatureCardList style="justify-content:center;align-items:flex-start">
         <PricingCard tier-name="Streamers" :hide-price="true">
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             2,500 followers
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Public or sub-only Discord server
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Must actively use TwitchBot
           </span>
         </PricingCard>
         <PricingCard tier-name="Professional organizations" :hide-price="true">
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             1,000 followers on any social media
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Public Discord server
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Must actively use TwitchBot
           </span>
         </PricingCard>
         <PricingCard tier-name="eSports teams" :hide-price="true">
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Average ~1,000 followers per streamer
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Professionally recognized (e.g. ESIC member)
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Public Discord server
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Must actively use TwitchBot
           </span>
         </PricingCard>
         <PricingCard tier-name="Streamer networks" :hide-price="true">
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             30+ active streamers
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             At least one streamer with 1,000 followers
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Moderated (application required to join)
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Public Discord server
           </span>
           <span>
-            <FontAwesomeIcon icon="check" />
+            <CheckIcon fillColor="#43b581" />
             Must actively use TwitchBot
           </span>
         </PricingCard>
@@ -145,20 +145,18 @@ import FeatureCardList from '@/components/FeatureCardList.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import PricingCard from '@/components/PricingCard.vue'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheck, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faCheck, faArrowDown)
+import ArrowDownIcon from 'mdi/ArrowDown.vue'
+import CheckIcon from 'mdi/Check.vue'
 
 export default {
   components: {
     AccentedArea,
+    ArrowDownIcon,
     Button,
     CarbonAd,
+    CheckIcon,
     FeatureCard,
     FeatureCardList,
-    FontAwesomeIcon,
     PageHeader,
     PricingCard
   }

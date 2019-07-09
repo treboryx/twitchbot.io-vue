@@ -8,7 +8,7 @@
           Apply Now
         </Button>
         <Button inset="true" v-scroll-to="'#content'">
-          Learn more <FontAwesomeIcon icon="arrow-down" />
+          Learn more <ArrowDownIcon />
         </Button>
       </p>
     </PageHeader>
@@ -91,18 +91,14 @@ import Button from '@/components/Button.vue'
 import CarbonSidebar from '@/components/CarbonSidebar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheck, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faCheck, faArrowDown)
+import ArrowDownIcon from 'mdi/ArrowDown.vue'
 
 export default {
   components: {
     AccentedArea,
+    ArrowDownIcon,
     Button,
     CarbonSidebar,
-    FontAwesomeIcon,
     PageHeader
   }
 }

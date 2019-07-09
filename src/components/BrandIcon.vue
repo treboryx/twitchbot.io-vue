@@ -1,6 +1,11 @@
 <template>
   <a :class="'brand ' + brand" :title="title" :href="href" target="_blank">
-    <FontAwesomeIcon :icon="['fab', brand]" />
+    <DiscordIcon v-if="brand == 'discord'" :size="16" />
+    <GithubIcon v-else-if="brand == 'github'" :size="16" />
+    <MediumIcon v-else-if="brand == 'medium'" :size="16" />
+    <PatreonIcon v-else-if="brand == 'patreon'" :size="16" />
+    <TwitchIcon v-else-if="brand == 'twitch'" :size="16" />
+    <TwitterIcon v-else-if="brand == 'twitter'" :size="16" />
   </a>
 </template>
 
@@ -20,22 +25,29 @@
 
 .brand:nth-of-type(1) {margin-left: 0;}
 .brand.discord {background-color: #7289da;}
-.brand.twitter {background-color: #1da1f2;}
-.brand.patreon {background-color: #f96854;}
 .brand.github {color: #333; background-color: white;}
+.brand.medium {background-color: black;}
+.brand.patreon {background-color: #f96854;}
 .brand.twitch {background-color: #54338C;}
+.brand.twitter {background-color: #1da1f2;}
 </style>
 
 <script>
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTwitter, faDiscord, faPatreon, faGithub, faTwitch } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faTwitter, faDiscord, faPatreon, faGithub, faTwitch)
+import DiscordIcon from 'mdi/Discord.vue'
+import GithubIcon from 'mdi/GithubCircle.vue'
+import MediumIcon from 'mdi/Medium.vue'
+import PatreonIcon from 'mdi/Patreon.vue'
+import TwitchIcon from 'mdi/Twitch.vue'
+import TwitterIcon from 'mdi/Twitter.vue'
 
 export default {
   components: {
-    FontAwesomeIcon
+    DiscordIcon,
+    GithubIcon,
+    MediumIcon,
+    PatreonIcon,
+    TwitchIcon,
+    TwitterIcon
   },
   props: ['brand', 'title', 'href']
 }

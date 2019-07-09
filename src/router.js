@@ -26,19 +26,40 @@ const router = new Router({
       }
     },
     {
-      path: '/bot-lists',
-      name: 'botLists',
-      component: () => import('./views/BotLists.vue')
-    },
-    {
       path: '/commands',
       name: 'commands',
-      component: () => import('./views/Commands.vue')
+      component: () => import('./views/Commands.vue'),
+      meta: {
+        title: 'Commands - TwitchBot',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'View a list of TwitchBot\'s commands online.'
+          },
+          {
+            name: 'og:description',
+            content: 'View a list of TwitchBot\'s commands online.'
+          }
+        ]
+      }
     },
     {
       path: '/commands/formatting',
       name: 'commandsFormatting',
-      component: () => import('./views/NotifFormatting.vue')
+      component: () => import('./views/NotifFormatting.vue'),
+      meta: {
+        title: 'Notification formatting - TwitchBot',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'Use this guide for reference on how to improve your notifications with rich content.'
+          },
+          {
+            name: 'og:description',
+            content: 'Use this guide for reference on how to improve your notifications with rich content.'
+          }
+        ]
+      }
     },
     {
       path: '/formatting',
@@ -47,12 +68,38 @@ const router = new Router({
     {
       path: '/languages',
       name: 'languages',
-      component: () => import('./views/Languages.vue')
+      component: () => import('./views/Languages.vue'),
+      meta: {
+        title: 'Languages - TwitchBot',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'A list of languages that TwitchBot\'s Discord interface has been translated into.'
+          },
+          {
+            name: 'og:description',
+            content: 'A list of languages that TwitchBot\'s Discord interface has been translated into.'
+          }
+        ]
+      }
     },
     {
       path: '/partners',
       name: 'partners',
-      component: () => import('./views/Partners.vue')
+      component: () => import('./views/Partners.vue'),
+      meta: {
+        title: 'Bringing communities together. - TwitchBot Partners',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'Boost your streaming organization or personal server with exclusive TwitchBot features and events.'
+          },
+          {
+            name: 'og:description',
+            content: 'Boost your streaming organization or personal server with exclusive TwitchBot features and events.'
+          }
+        ]
+      }
     },
     {
       path: '/premium',
@@ -61,12 +108,38 @@ const router = new Router({
     {
       path: '/pro',
       name: 'pro',
-      component: () => import('./views/Pro.vue')
+      component: () => import('./views/Pro.vue'),
+      meta: {
+        title: 'Boost your TwitchBot experience. - TwitchBot Pro',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'Become a TwitchBot Pro with access to exclusive features, faster notifications, and less limits for you and your server.'
+          },
+          {
+            name: 'og:description',
+            content: 'Become a TwitchBot Pro with access to exclusive features, faster notifications, and less limits for you and your server.'
+          }
+        ]
+      }
     },
     {
       path: '/translators',
       name: 'translators',
-      component: () => import('./views/Translators.vue')
+      component: () => import('./views/Translators.vue'),
+      meta: {
+        title: 'Translators - TwitchBot',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'The community-driven translation project for TwitchBot.'
+          },
+          {
+            name: 'og:description',
+            content: 'The community-driven translation project for TwitchBot.'
+          }
+        ]
+      }
     }
   ],
   scrollBehavior (to, from, savedPosition) {

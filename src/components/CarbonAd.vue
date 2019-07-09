@@ -1,5 +1,5 @@
 <template>
-  <div id="carbon-wrapper">
+  <div id="carbon-wrapper" :class="{vertical: layout == 'vertical'}">
   </div>
 </template>
 
@@ -14,6 +14,20 @@
   margin: auto;
   border-radius: 5px;
   max-width: calc(100vw - 5em);
+}
+
+.vertical #carbonads {
+  display: flex;
+  width: 130px;
+  flex-direction: column nowrap;
+}
+
+.vertical #carbonads .carbon-text {
+  max-width: 100%;
+}
+
+.vertical #carbonads .carbon-poweredby {
+  position: static;
 }
 
 #carbonads a {
@@ -66,6 +80,7 @@ export default {
     script.setAttribute('src', '//cdn.carbonads.com/carbon.js?serve=CK7IT5Q7&placement=twitchbotio')
     script.setAttribute('id', '_carbonads_js')
     document.querySelector('#carbon-wrapper').appendChild(script)
-  }
+  },
+  props: ['layout']
 }
 </script>

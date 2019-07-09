@@ -1,5 +1,5 @@
 <template>
-  <a :class="'brand ' + brand" :title="title" :href="href">
+  <a :class="'brand ' + brand" :title="title" :href="href" target="_blank">
     <FontAwesomeIcon :icon="['fab', brand]" />
   </a>
 </template>

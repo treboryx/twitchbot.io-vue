@@ -39,6 +39,11 @@ const router = new Router({
       path: '/pro',
       name: 'pro',
       component: () => import('./views/Pro.vue')
+    },
+    {
+      path: '/translators',
+      name: 'translators',
+      component: () => import('./views/Translators.vue')
     }
   ],
   scrollBehavior (to, from, savedPosition) {

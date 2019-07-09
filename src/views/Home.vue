@@ -5,7 +5,7 @@
         <h1>The best Twitch bot for Discord</h1>
         <h2>TwitchBot has tons of features for Twitch users, streamers, and gamers that will make any server more exciting.</h2>
         <p style="margin-top:3em">
-          <Button default="true" shine="true" href="#">
+          <Button default="true" shine="true" @click.native="openBotInvite()">
             Add to Discord
           </Button>
           <Button href="https://discord.gg/UNYzJqV" target="_blank">
@@ -89,12 +89,31 @@
           takes is a few clicks to set everything up.
         </p>
         <p>
-          <Button default="true" shine="true" href="#">
+          <Button default="true" shine="true" @click.native="openBotInvite()">
             Add to Discord
           </Button>
         </p>
       </div>
     </AccentedArea>
+    <ModalBox title="How to get started" v-show="showAfterInviteModal" :close-method="() => {showAfterInviteModal = false}">
+      <span class="modal-text">
+        Thanks for adding TwitchBot to your server.
+        New to TwitchBot? Click on one of the links below to
+        get help.
+      </span>
+      <a class="modal-card" target="_blank" href="https://support.twitchbot.io/articles/d1b179de-dc32-4066-845f-7dd66aa02493">
+        <span class="minor">TwitchBot Support</span>
+        <span class="title">Getting Started with TwitchBot</span>
+      </a>
+      <a class="modal-card" target="_blank" href="https://support.twitchbot.io/articles/e3ee24cc-a18e-4371-8684-220f7f5478d6">
+        <span class="minor">TwitchBot Support</span>
+        <span class="title">How do I add a notification?</span>
+      </a>
+      <a class="modal-card" target="_blank" href="https://discord.gg/UNYzJqV">
+        <span class="minor">Discord</span>
+        <span class="title">TwitchBot Discord server</span>
+      </a>
+    </ModalBox>
   </div>
 </template>
 
@@ -170,10 +189,28 @@ import Button from '@/components/Button.vue'
 import CarbonAd from '@/components/CarbonAd.vue'
 import FeatureCard from '@/components/FeatureCard.vue'
 import FeatureCardList from '@/components/FeatureCardList.vue'
+import ModalBox from '@/components/ModalBox.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import PartnerImage from '@/components/PartnerImage.vue'
 import Slick from 'vue-slick'
 import TestimonialCard from '@/components/TestimonialCard'
+
+function _popupAtScreenCenter (url, title, w, h) {
+  // https://stackoverflow.com/questions/4068373/center-a-popup-window-on-screen
+
+  var dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screenX
+  var dualScreenTop = window.screenTop !== undefined ? window.screenTop : window.screenY
+
+  var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width
+  var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height
+
+  var left = (width - w) / 2 + dualScreenLeft
+  var top = (height - h) / 2 + dualScreenTop
+  var newWindow = window.open(url, title, 'scrollbars=yes,width=' + w + ',height=' + h + ',top=' + top + ',left=' + left)
+
+  if (window.focus) newWindow.focus()
+  return newWindow
+}
 
 export default {
   name: 'home',
@@ -183,6 +220,7 @@ export default {
     CarbonAd,
     FeatureCard,
     FeatureCardList,
+    ModalBox,
     PageHeader,
     PartnerImage,
     Slick,
@@ -196,6 +234,7 @@ export default {
   },
   data () {
     return {
+      showAfterInviteModal: false,
       slickOptions: {
         infinite: true,
         arrows: false,
@@ -218,6 +257,16 @@ export default {
           }
         ]
       }
+    }
+  },
+  methods: {
+    openBotInvite () {
+      const popup = _popupAtScreenCenter(
+        'https://discordapp.com/oauth2/authorize?client_id=375805687529209857&permissions=842452032&scope=bot',
+        'Invite TwitchBot to your server',
+        400, 600
+      )
+      this.showAfterInviteModal = true
     }
   }
 }

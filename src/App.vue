@@ -36,7 +36,7 @@ a {
   color: inherit;
 }
 
-p {
+p, li {
   color: rgba(255,255,255,.7);
 }
 

@@ -26,9 +26,23 @@ const router = new Router({
       }
     },
     {
+      path: '/bot-lists',
+      name: 'botLists',
+      component: () => import('./views/BotLists.vue')
+    },
+    {
       path: '/commands',
       name: 'commands',
       component: () => import('./views/Commands.vue')
+    },
+    {
+      path: '/commands/formatting',
+      name: 'commandsFormatting',
+      component: () => import('./views/NotifFormatting.vue')
+    },
+    {
+      path: '/formatting',
+      redirect: '/commands/formatting'
     },
     {
       path: '/languages',
@@ -39,6 +53,10 @@ const router = new Router({
       path: '/partners',
       name: 'partners',
       component: () => import('./views/Partners.vue')
+    },
+    {
+      path: '/premium',
+      redirect: '/pro'
     },
     {
       path: '/pro',

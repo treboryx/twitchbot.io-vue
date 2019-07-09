@@ -61,9 +61,8 @@
           <tr><td>notif formatting</td>
             <td>
               Shows variables that you can insert into notification messages.
-              You can also read the <a href="/formatting" target="_blank">
-                formatting guide
-              </a>
+              You can also read the <a href="/commands/formatting" target="_blank">
+                formatting guide</a>
               to learn more about customizing notifications.
             </td>
           </tr>
@@ -160,7 +159,7 @@ p.big {
   font-size: 1.1rem;
 }
 
-p.big a, .quote a {
+p.big a, .quote a, table a {
   text-decoration: underline;
 }
 
@@ -213,25 +212,17 @@ td:not(:last-of-type) {
   border-radius: 5px;
   margin-bottom: 1rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: center;
 }
 
 .quote svg {
-  margin-right: 3px;
+  margin-right: 5px;
   margin-top: 3px;
 }
 
 .quote.info svg {
   color: rgb(52, 152, 219);
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .1s;
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0;
 }
 </style>
 

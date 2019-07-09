@@ -211,7 +211,7 @@ export default {
             }
           },
           {
-            breakpoint: 487,
+            breakpoint: 500,
             settings: {
               slidesToShow: 1
             }

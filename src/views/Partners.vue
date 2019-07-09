@@ -8,7 +8,7 @@
           Apply Now
         </Button>
         <Button inset="true" v-scroll-to="'#content'">
-          Learn more
+          Learn about Partners <FontAwesomeIcon icon="arrow-down" />
         </Button>
       </p>
     </PageHeader>
@@ -58,6 +58,20 @@
             Must actively use TwitchBot
           </span>
         </PricingCard>
+        <PricingCard tier-name="Professional organizations" :hide-price="true">
+          <span>
+            <FontAwesomeIcon icon="check" />
+            1,000 followers on any social media
+          </span>
+          <span>
+            <FontAwesomeIcon icon="check" />
+            Public Discord server
+          </span>
+          <span>
+            <FontAwesomeIcon icon="check" />
+            Must actively use TwitchBot
+          </span>
+        </PricingCard>
         <PricingCard tier-name="eSports teams" :hide-price="true">
           <span>
             <FontAwesomeIcon icon="check" />
@@ -88,20 +102,6 @@
           <span>
             <FontAwesomeIcon icon="check" />
             Moderated (application required to join)
-          </span>
-          <span>
-            <FontAwesomeIcon icon="check" />
-            Public Discord server
-          </span>
-          <span>
-            <FontAwesomeIcon icon="check" />
-            Must actively use TwitchBot
-          </span>
-        </PricingCard>
-        <PricingCard tier-name="Professional organizations" :hide-price="true">
-          <span>
-            <FontAwesomeIcon icon="check" />
-            1,000 followers on any social media
           </span>
           <span>
             <FontAwesomeIcon icon="check" />
@@ -146,10 +146,10 @@ import PageHeader from '@/components/PageHeader.vue'
 import PricingCard from '@/components/PricingCard.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCheck)
+library.add(faCheck, faArrowDown)
 
 export default {
   components: {

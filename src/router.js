@@ -26,18 +26,22 @@ const router = new Router({
       }
     },
     {
-      path: '/pro',
-      name: 'pro',
-      component: () => import('./views/Pro.vue')
+      path: '/commands',
+      name: 'commands',
+      component: () => import('./views/Commands.vue')
     },
     {
       path: '/partners',
       name: 'partners',
       component: () => import('./views/Partners.vue')
+    },
+    {
+      path: '/pro',
+      name: 'pro',
+      component: () => import('./views/Pro.vue')
     }
   ],
   scrollBehavior (to, from, savedPosition) {
-    console.log(to)
     if (to.hash) {
       return { selector: to.hash }
     } else if (savedPosition) {

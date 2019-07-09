@@ -9,7 +9,7 @@
             $2.50 / Month
           </Button>
           <Button inset="true" v-scroll-to="'#content'">
-            Learn more
+            Learn about Pro <FontAwesomeIcon icon="arrow-down" />
           </Button>
         </p>
       </div>
@@ -81,10 +81,10 @@ import PageHeader from '@/components/PageHeader.vue'
 import PricingCard from '@/components/PricingCard.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCheck)
+library.add(faCheck, faArrowDown)
 
 export default {
   components: {

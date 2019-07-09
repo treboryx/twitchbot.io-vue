@@ -51,6 +51,11 @@ p.standalone a {
   text-decoration: underline;
 }
 
+code {
+  font-family: 'Inconsolata', monospace;
+  font-size: inherit;
+}
+
 h1 {
   font: 500 1.75em 'Poppins', 'Roboto', sans-serif;
 }

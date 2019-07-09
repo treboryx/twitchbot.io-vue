@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div class="logged-in-ctx" v-show="isVisible">
+    <div class="logged-in-ctx" v-show="isVisible" @click="clickFix()">
       <a href="https://discordapp.com/oauth2/authorize?client_id=375805687529209857&permissions=842452032&scope=bot&response_type=code&redirect_uri=https://twitchbot.io/?invited">Invite</a>
       <a href="https://support.twitchbot.io" only-mobile>Support</a>
       <a href="https://discordbots.org/bot/twitch/vote">Upvote</a>
@@ -15,9 +15,6 @@
       <a href="https://overlay.twitchbot.io">Overlay</a>
       <a href="https://medium.com/twitchbot">Blog</a>
       <a href="https://twitch.tv/twitchbot_discord">Twitch</a>
-      <a href="https://github.com/twitchbot-discord">GitHub</a>
-      <div class="sep"></div>
-      <router-link to="/bot-lists">Bot lists</router-link>
     </div>
   </transition>
 </template>
@@ -61,6 +58,6 @@
 
 <script>
 export default {
-  props: ['isVisible']
+  props: ['isVisible', 'clickFix']
 }
 </script>

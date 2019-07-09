@@ -23,7 +23,7 @@
         </a>
       </span>
     </nav>
-    <LinksMenu :is-visible="menuIsVisible"/>
+    <LinksMenu :is-visible="menuIsVisible" :click-fix="() => {menuIsVisible = false;}" />
   </div>
 </template>
 
@@ -94,7 +94,6 @@ export default {
   methods: {
     toggleMenu () {
       this.menuIsVisible = !this.menuIsVisible
-      document.querySelector('#more-links').style.transform = `rotate: ${this.menuIsVisible ? 180 : 0}deg`
     }
   }
 }

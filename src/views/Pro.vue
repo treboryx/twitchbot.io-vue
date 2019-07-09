@@ -5,7 +5,7 @@
         <h1>Boost your TwitchBot experience.</h1>
         <h2>Become a TwitchBot Pro with access to exclusive features, faster notifications, and less limits for you and your server.</h2>
         <p style="margin-top:3em">
-          <Button default="true" shine="true">
+          <Button default="true" shine="true" href="https://www.patreon.com/join/devakira/checkout?rid=3677518">
             $2.50 / Month
           </Button>
           <Button inset="true" v-scroll-to="'#content'">

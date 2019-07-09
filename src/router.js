@@ -106,6 +106,14 @@ const router = new Router({
       redirect: '/pro'
     },
     {
+      path: '/privacy',
+      name: 'privacy',
+      component: () => import('./views/PrivacyPolicy.vue'),
+      meta: {
+        title: 'Privacy Policy - TwitchBot'
+      }
+    },
+    {
       path: '/pro',
       name: 'pro',
       component: () => import('./views/Pro.vue'),
@@ -121,6 +129,14 @@ const router = new Router({
             content: 'Become a TwitchBot Pro with access to exclusive features, faster notifications, and less limits for you and your server.'
           }
         ]
+      }
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: () => import('./views/TermsOfService.vue'),
+      meta: {
+        title: 'Terms of Service - TwitchBot'
       }
     },
     {

@@ -4,7 +4,7 @@
       <h1>Commands</h1>
       <h2>View a list of TwitchBot's available commands.</h2>
     </PageHeader>
-    <div class="section">
+    <CarbonSidebar>
       <p class="big">
         New to TwitchBot? Get a
         <a href="https://support.twitchbot.io/articles/d1b179de-dc32-4066-845f-7dd66aa02493">quick guide</a>
@@ -147,10 +147,7 @@
           <tr><td>fortnite</td><td>Shows Fortnite player stats</td></tr>
         </table>
       </details>
-    </div>
-    <div class="section">
-      <CarbonAd />
-    </div>
+    </CarbonSidebar>
   </div>
 </template>
 
@@ -231,7 +228,7 @@ td:not(:last-of-type) {
 </style>
 
 <script>
-import CarbonAd from '@/components/CarbonAd.vue'
+import CarbonSidebar from '@/components/CarbonSidebar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -242,7 +239,7 @@ library.add(faInfoCircle)
 
 export default {
   components: {
-    CarbonAd,
+    CarbonSidebar,
     FontAwesomeIcon,
     PageHeader
   }

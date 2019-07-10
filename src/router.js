@@ -156,6 +156,10 @@ const router = new Router({
           }
         ]
       }
+    },
+    {
+      path: '*',
+      redirect: '/'
     }
   ],
   scrollBehavior (to, from, savedPosition) {

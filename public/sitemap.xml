@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://twitchbot.io/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/commands</loc>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/pro</loc>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/partners</loc>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/commands/formatting</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/translators</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/languages</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/terms</loc>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/privacy</loc>
+    <priority>0.1</priority>
+  </url>
+</urlset>

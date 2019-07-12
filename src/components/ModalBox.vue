@@ -1,5 +1,5 @@
 <template>
-  <transition name="fade">
+  <transition name="fade-scale">
     <div class="modal-background">
       <div class="modal-box">
         <div class="modal-nav">
@@ -30,11 +30,11 @@
     transform: scale(1);
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-scale-enter-active, .fade-scale-leave-active {
   transition: opacity .1s, transform .1s;
 }
 
-.fade-enter, .fade-leave-to {
+.fade-scale-enter, .fade-scale-leave-to {
   opacity: 0;
   transform: scale(.85);
 }

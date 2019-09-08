@@ -17,16 +17,16 @@
         <img src="../assets/discord-mockup.svg">
       </div>
     </PageHeader>
-    <div class="section">
+    <div class="section fcard-list">
       <FeatureCardList>
         <FeatureCard title="Access Twitch from Discord" icon="twitch" icon-alt="Twitch logo">
-          View details and stats from your favorite streamers on Twitch. Get current view and stream status, current game, and a preview of the stream.
+          View details and stats from your favorite streamers on Twitch. See the most popular games and streams on Twitch with just one command.
+        </FeatureCard>
+        <FeatureCard title="Easy-to-use dashboard" icon="dashboard" icon-alt="Dashboard configuration website">
+          Manage your server's stream notifications, live role, and connected accounts with a convenient <a href="https://dash.twitchbot.io" target="_blank">web dashboard</a>.
         </FeatureCard>
         <FeatureCard title="Fast stream notifications" icon="push-notifications" icon-alt="Twitch streamer notifications for Discord">
           Get an in-chat notification when your favorite streamers start broadcasting. Choose from a wide range of customization options for the best alerts.
-        </FeatureCard>
-        <FeatureCard title="See what's trending" icon="combo-chart" icon-alt="Trending Twitch streams">
-          See the most popular games and streams on Twitch with just one command. You'll also see a variety of other helpful information.
         </FeatureCard>
         <FeatureCard title="View the top highlights and clips" icon="video-playlist" icon-alt="Twitch clips on Discord">
           Search Twitch's wide selection of clips recorded by tons of users. Search by trending, a certain game, or a Twitch streamer.
@@ -41,7 +41,7 @@
           Take a look at any player's Fortnite or Overwatch stats by entering their in-game name. See a wide variety of stats for each game.
         </FeatureCard>
         <FeatureCard title="Available in multiple languages" icon="language" icon-alt="Multiple languages">
-          TwitchBot has been translated to a variety of languages including Chinese, French, Hungarian, Indonesian, Italian, Lithuanian, Persian, Russian, Spanish, Turkish, and <router-link to="/languages">others</router-link>.
+          TwitchBot has been translated to a variety of languages including Chinese, French, Hungarian, Indonesian, Italian, Lithuanian, Russian, Spanish, Turkish, and <router-link to="/languages">more</router-link>.
         </FeatureCard>
       </FeatureCardList>
     </div>
@@ -70,9 +70,6 @@
           <TestimonialCard name="jimmy_chew" icon-url="https://cdn.discordapp.com/avatars/94790092429729792/d5fb31297d8e92010764e58faafc8a6c.png">
             The role-based stream announcements are solid gold!
           </TestimonialCard>
-          <TestimonialCard name="bro" org="Heavens Streaming Network" icon-url="https://cdn.discordapp.com/avatars/450884454395936769/0acd3bbedf9bd8618dbdf845b417707b.png">
-            TwitchBot has made managing my Discord server much easier with automatic notifications. Now I don't have to manually announce streams!
-          </TestimonialCard>
         </slick>
         <FeatureCardList style="align-items:center">
           <PartnerImage src="stream_elements_logo.webp" title="StreamElements" href="https://streamelements.com" />
@@ -81,19 +78,11 @@
           <PartnerImage src="playportal_logo.png" title="PlayPortal" href="https://playportal.eu" />
         </FeatureCardList>
       </div>
-      <div class="section" style="text-align:center">
-        <h1>Improve your server with TwitchBot</h1>
-        <p class="standalone">
-          Add TwitchBot to your Discord server and discover how easy it is
-          to engage your community with several helpful features. All it
-          takes is a few clicks to set everything up.
-        </p>
-        <p>
-          <Button default="true" shine="true" @click.native="openBotInvite()">
-            Add to Discord
-          </Button>
-        </p>
-      </div>
+      <CallToAction title="Improve your server with TwitchBot" buttonText="Add to Discord" :buttonClick="openBotInvite">
+        Add TwitchBot to your Discord server and discover how easy it is
+        to engage your community with several helpful features. All it
+        takes is a few clicks to set everything up.
+      </CallToAction>
     </AccentedArea>
     <ModalBox title="How to get started" v-show="showAfterInviteModal" :close-method="() => {showAfterInviteModal = false}">
       <span class="modal-text">
@@ -119,73 +108,85 @@
 
 <style>
 .index-header .main-content {
-    max-width: 500px;
-    text-align: left;
-    flex-grow: 0;
+  max-width: 500px;
+  text-align: left;
+  flex-grow: 0;
 }
 
 .index-header .header-image, .index-header .header-image img {
-    flex: 0 1 470px;
-    height: auto;
-    box-sizing: border-box;
-    max-width: 470px;
+  flex: 0 1 470px;
+  height: auto;
+  box-sizing: border-box;
+  max-width: 470px;
 }
 
 .index-header .header-image {
-    position: relative;
-    animation: float 3.5s ease-in-out infinite;
+  position: relative;
+  animation: float 3.5s ease-in-out infinite;
 }
 
 .index-header h1 {
-    font-size: 1.9rem;
-    margin: 0 0 0.67em 0;
+  font-size: 1.9rem;
+  margin: 0 0 0.67em 0;
 }
 
 .slick-slide > div {
   margin: 0 10px;
 }
 
+.fcard-list {
+  max-width: calc(800px + 2rem);
+}
+
+.fcard-list .card {
+  flex: 0 1 400px;
+}
+
+footer {
+  background-color: #06090B;
+}
+
 @media (max-width: 940px) {
-    .index-header .header-image {
-        display: none;
-    }
+  .index-header .header-image {
+    display: none;
+  }
 
-    .index-header .main-content {
-        text-align: center;
-        max-width: none;
-        flex-grow: 1;
-    }
+  .index-header .main-content {
+    text-align: center;
+    max-width: none;
+    flex-grow: 1;
+  }
 
-    .index-header h1 {
-        font-size: 2.5em;
-    }
+  .index-header h1 {
+    font-size: 2.5em;
+  }
 
-    .index-header h2 {
-        font-size: 1.5em;
-    }
+  .index-header h2 {
+    font-size: 1.5em;
+  }
 
-    .index-header Button {
-        margin: 6px 0;
-    }
+  .index-header Button {
+    margin: 6px 0;
+  }
 }
 
 @media (max-width: 670px) {
-    .partner-images img {
-        flex: 100% 1 1;
-    }
+  .partner-images img {
+    flex: 100% 1 1;
+  }
 }
 
 @keyframes float {
-    0% {top: 0em;}
-    50% {top: 1em;}
-    100% {top: 0em;}
+  0% {top: 0em;}
+  50% {top: 1em;}
+  100% {top: 0em;}
 }
-
 </style>
 
 <script>
 import AccentedArea from '@/components/AccentedArea.vue'
 import Button from '@/components/Button.vue'
+import CallToAction from '@/components/CallToAction.vue'
 import CarbonAd from '@/components/CarbonAd.vue'
 import FeatureCard from '@/components/FeatureCard.vue'
 import FeatureCardList from '@/components/FeatureCardList.vue'
@@ -217,6 +218,7 @@ export default {
   components: {
     AccentedArea,
     Button,
+    CallToAction,
     CarbonAd,
     FeatureCard,
     FeatureCardList,

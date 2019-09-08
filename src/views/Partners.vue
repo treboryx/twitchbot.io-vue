@@ -28,7 +28,7 @@
           Keep your server squeaky clean with quick and easy moderation commands, a must-have for any public community.
         </FeatureCard>
         <FeatureCard title="PR Opportunities" icon="news">
-          Keep your server squeaky clean with quick and easy moderation commands, a must-have for any public community.
+          We'll feature you in different places such as our Twitter, Discord server, and website.
         </FeatureCard>
         <FeatureCard title="Access to beta features" icon="key-security">
           Be one of the first users to try out and test cutting-edge features for TwitchBot.

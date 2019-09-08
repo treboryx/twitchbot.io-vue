@@ -11,6 +11,7 @@
       <router-link to="/partners">Partners</router-link>
       <router-link to="/translators">Translators</router-link>
       <router-link to="/languages">Languages</router-link>
+      <a href="https://status.twitchbot.io">Status page</a>
       <div class="sep"></div>
       <a href="https://overlay.twitchbot.io">Overlay</a>
       <a href="https://medium.com/twitchbot">Blog</a>
@@ -21,30 +22,38 @@
 
 <style scoped>
 .logged-in-ctx {
-    padding: .1rem;
-    background-color: #12191f;
-    z-index: 10001;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    position: absolute;
-    right: .5rem;
-    top: calc(41px + .25rem);
-    width: 200px;
-    text-align: left;
-    border-radius: 5px;
+  padding: .5rem;
+  background-color: #12191f;
+  z-index: 10001;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  position: absolute;
+  width: 200px;
+  text-align: left;
+  border-radius: 5px;
+  right: .5rem;
+  top: 41px;
 }
 
 .logged-in-ctx .sep {
-    height: 1px;
-    background-color: rgba(255,255,255,.1);
-    margin: 0 .5rem;
+  height: 1px;
+  background-color: rgba(255,255,255,.075);
+  margin: .5rem 0;
 }
 
 .logged-in-ctx a {
-    margin: .75rem 1rem;
-    padding: 0 !important;
-    display: block;
-    color: rgba(255,255,255,.7);
-    font-size: .8em;
+  padding: .5rem !important;
+  display: block;
+  color: white;
+  opacity: .7;
+  font-size: .8em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color .1s;
+}
+
+.logged-in-ctx a:hover {
+  /* .05 lighter than base menu */
+  background-color: #1A2127;
 }
 
 .fade-enter-active, .fade-leave-active {

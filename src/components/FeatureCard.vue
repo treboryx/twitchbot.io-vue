@@ -12,6 +12,8 @@
 .card {
   flex: 0 0 335px;
   padding: 1rem 0;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .card h3 {
@@ -20,7 +22,8 @@
 
 .card p {
   margin: 0;
-  line-height: 1.2;
+  font-size: 1.05rem;
+  line-height: 1.4;
 }
 
 .card a {
@@ -30,17 +33,14 @@
 .card img {
   height: 48px;
   width: 48px;
+  flex: 0 0 auto;
+  margin-right: 8px;
 }
 
-@media screen and (max-width: 720px) {
-    .card {
-        text-align: center;
-        flex: 1 1 auto;
-    }
-
-    .card img {
-      margin: auto;
-    }
+@media screen and (max-width: 849px) {
+  .card {
+    flex: 1 1 auto !important;
+  }
 }
 
 </style>

@@ -1,21 +1,20 @@
 <template>
   <transition name="fade">
     <div class="logged-in-ctx" v-show="isVisible" @click="clickFix()">
+      <a href="https://support.twitchbot.io" class="em">Support</a>
+      <a href="https://dash.twitchbot.io" class="em">Dashboard</a>
+      <div class="sep" />
       <a href="https://discordapp.com/oauth2/authorize?client_id=375805687529209857&permissions=842452032&scope=bot&response_type=code&redirect_uri=https://twitchbot.io/?invited">Invite</a>
-      <a href="https://support.twitchbot.io" only-mobile>Support</a>
       <a href="https://discordbots.org/bot/twitch/vote">Upvote</a>
-      <a href="https://dash.twitchbot.io" only-mobile>Dashboard</a>
       <router-link to="/commands">Commands</router-link>
-      <div class="sep"></div>
-      <router-link to="/pro" only-mobile>TwitchBot Pro</router-link>
+      <div class="sep" />
+      <router-link to="/pro">TwitchBot Pro</router-link>
       <router-link to="/partners">Partners</router-link>
       <router-link to="/translators">Translators</router-link>
       <router-link to="/languages">Languages</router-link>
-      <a href="https://status.twitchbot.io">Status page</a>
-      <div class="sep"></div>
-      <a href="https://overlay.twitchbot.io">Overlay</a>
+      <div class="sep" />
       <a href="https://medium.com/twitchbot">Blog</a>
-      <a href="https://twitch.tv/twitchbot_discord">Twitch</a>
+      <a href="https://status.twitchbot.io">Status page</a>
     </div>
   </transition>
 </template>
@@ -27,7 +26,7 @@
   z-index: 10001;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   position: absolute;
-  width: 200px;
+  width: 220px;
   text-align: left;
   border-radius: 5px;
   right: .5rem;
@@ -45,10 +44,14 @@
   display: block;
   color: white;
   opacity: .7;
-  font-size: .8em;
+  font-size: .95em;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color .1s;
+}
+
+.logged-in-ctx a.em {
+  color: #7289da;
 }
 
 .logged-in-ctx a:hover {

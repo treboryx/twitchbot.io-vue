@@ -51,11 +51,11 @@ header p {
 }
 
 .new-header h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .new-header .button, .new-header .inset-button {
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 
 .wave-svg {
@@ -71,6 +71,6 @@ header p {
 
 <style>
 .new-header h1 .material-design-icon__svg {
-    margin-bottom: -13px;
+    margin-bottom: -9px;
 }
 </style>

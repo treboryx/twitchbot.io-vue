@@ -148,7 +148,7 @@ import FeatureCardList from '@/components/FeatureCardList.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import PricingCard from '@/components/PricingCard.vue'
 
-import ArrowCollapseRightIcon from 'mdi/ArrowCollapseRight.vue';
+import ArrowCollapseRightIcon from 'mdi/ArrowCollapseRight.vue'
 import ArrowDownIcon from 'mdi/ArrowDown.vue'
 import CheckIcon from 'mdi/Check.vue'
 

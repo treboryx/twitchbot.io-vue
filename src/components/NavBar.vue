@@ -12,14 +12,14 @@
       <div class="flex-spacer"></div>
       <span class="right">
         <a href="https://twitter.com/twitchbot_io" target="_blank" title="Twitter account">
-          <TwitterIcon :size="16" />
+          <TwitterIcon :size="20" />
         </a>
         <a href="https://discord.gg/UNYzJqV" target="_blank" title="Discord server">
-          <DiscordIcon :size="16" />
+          <DiscordIcon :size="20" />
         </a>
         <div class="nav-sep"></div>
         <a @click="toggleMenu()" title="More links" id="more-links">
-          <ChevronDownIcon :size="16" />
+          <ChevronDownIcon :size="20" />
         </a>
       </span>
     </nav>
@@ -43,13 +43,13 @@ nav a {
 }
 
 nav a.main {
-  font: 500 1em 'Cereal', 'Roboto', sans-serif;
+  font: 500 1.2em 'Cereal', 'Roboto', sans-serif;
   padding-right: 5px;
 }
 
 nav .links a {
-  font-size: .9em;
-  color: var(--text-tertiary);
+  font-size: 1.1em;
+  color: var(--text-primary);
   padding-left: 12px;
 }
 
@@ -59,13 +59,13 @@ nav .flex-spacer {
 
 nav .right a {
   padding-left: 12px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 nav .nav-sep {
   display: inline-block;
   width: 1px;
-  height: .9em;
+  height: 1.1em;
   background: rgba(240,240,255,.25);
   margin-left: 12px;
 }

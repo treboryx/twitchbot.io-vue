@@ -1,20 +1,23 @@
 <template>
   <div>
-    <PageHeader class="index-header">
+    <PageHeader class="index-header new-header">
       <div class="main-content">
-        <h1>The best Twitch bot for Discord</h1>
+        <h1>
+          The best Twitch bot for Discord.
+          <TwitchIcon decorative :size="48" />
+        </h1>
         <h2>TwitchBot has tons of features for Twitch users, streamers, and gamers that will make any server more exciting.</h2>
         <p style="margin-top:3em">
           <Button default="true" shine="true" @click.native="openBotInvite()">
             Add to Discord
           </Button>
-          <Button href="https://discord.gg/UNYzJqV" target="_blank">
-            Support Server
+          <Button href="https://support.twitchbot.io" target="_blank">
+            Support Website
           </Button>
         </p>
       </div>
       <div class="header-image">
-        <img src="../assets/discord-mockup.svg">
+        <img src="@/assets/discord-mockup.svg">
       </div>
     </PageHeader>
     <div class="section fcard-list">
@@ -97,6 +100,10 @@
       <a class="modal-card" target="_blank" href="https://support.twitchbot.io/articles/e3ee24cc-a18e-4371-8684-220f7f5478d6">
         <span class="minor">TwitchBot Support</span>
         <span class="title">How do I add a notification?</span>
+      </a>
+      <a class="modal-card" target="_blank" href="https://dash.twitchbot.io">
+        <span class="minor">TwitchBot Dashboard</span>
+        <span class="title">Configure TwitchBot online</span>
       </a>
       <a class="modal-card" target="_blank" href="https://discord.gg/UNYzJqV">
         <span class="minor">Discord</span>
@@ -196,6 +203,8 @@ import PartnerImage from '@/components/PartnerImage.vue'
 import Slick from 'vue-slick'
 import TestimonialCard from '@/components/TestimonialCard'
 
+import TwitchIcon from 'mdi/Twitch.vue'
+
 function _popupAtScreenCenter (url, title, w, h) {
   // https://stackoverflow.com/questions/4068373/center-a-popup-window-on-screen
 
@@ -226,7 +235,8 @@ export default {
     PageHeader,
     PartnerImage,
     Slick,
-    TestimonialCard
+    TestimonialCard,
+    TwitchIcon
   },
   created () {
     let link = document.createElement('link')
@@ -263,7 +273,7 @@ export default {
   },
   methods: {
     openBotInvite () {
-      const popup = _popupAtScreenCenter(
+      _popupAtScreenCenter(
         'https://discordapp.com/oauth2/authorize?client_id=375805687529209857&permissions=842452032&scope=bot',
         'Invite TwitchBot to your server',
         400, 600

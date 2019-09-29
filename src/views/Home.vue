@@ -4,7 +4,6 @@
       <div class="main-content">
         <h1>
           The best Twitch bot for Discord.
-          <TwitchIcon decorative :size="48" />
         </h1>
         <h2>TwitchBot has tons of features for Twitch users, streamers, and gamers that will make any server more exciting.</h2>
         <p style="margin-top:3em">
@@ -20,6 +19,7 @@
         <img src="@/assets/discord-mockup.svg">
       </div>
     </PageHeader>
+          <TwitchIcon decorative :size="48" />
     <div class="section fcard-list">
       <FeatureCardList>
         <FeatureCard title="Access Twitch from Discord" icon="twitch" icon-alt="Twitch logo">
@@ -203,8 +203,6 @@ import PartnerImage from '@/components/PartnerImage.vue'
 import Slick from 'vue-slick'
 import TestimonialCard from '@/components/TestimonialCard'
 
-import TwitchIcon from 'mdi/Twitch.vue'
-
 function _popupAtScreenCenter (url, title, w, h) {
   // https://stackoverflow.com/questions/4068373/center-a-popup-window-on-screen
 
@@ -235,8 +233,7 @@ export default {
     PageHeader,
     PartnerImage,
     Slick,
-    TestimonialCard,
-    TwitchIcon
+    TestimonialCard
   },
   created () {
     let link = document.createElement('link')

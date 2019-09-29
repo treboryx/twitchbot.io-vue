@@ -16,7 +16,7 @@
 
 <style scoped>
 .p-card {
-    background-color: #06090B;
+    background-color: var(--background-darker);
     padding: 1rem;
     border-radius: 3px;
     width: 250px;

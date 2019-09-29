@@ -40,7 +40,7 @@
 }
 
 .modal-box {
-  background-color: #17242d;
+  background-color: var(--background);
   border-radius: 10px;
   width: 320px;
   max-width: 100vw;
@@ -81,7 +81,7 @@
   display: block;
   padding: .5rem;
   border-radius: 3px;
-  background-color: #283f4f;
+  background-color: var(--background-lighter);
   margin-top: .5rem;
   color: white;
 }

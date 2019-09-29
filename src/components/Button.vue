@@ -10,7 +10,7 @@
   margin: 6px 8px;
   padding: 12px 22px;
   border-radius: 3px;
-  background-color: #283f4f;
+  background-color: var(--background-lighter);
   color: rgba(255,255,255,.8);
   cursor: pointer;
   white-space: nowrap;
@@ -20,7 +20,7 @@
 }
 
 .button.default {
-  background-color: rgb(67,181,129);
+  background-color: var(--accent-green);
 }
 
 /* Button shine effect */

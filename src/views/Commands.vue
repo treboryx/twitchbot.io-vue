@@ -184,7 +184,7 @@ summary .desc {
 }
 
 table {
-  background-color: #12191f;
+  background-color: var(--background-dark);
   border-radius: 5px;
   padding-bottom: .5rem;
   width: 100%;
@@ -208,7 +208,7 @@ td:not(:last-of-type) {
 
 .quote {
   padding: 1rem;
-  background-color: #12191f;
+  background-color: var(--background-dark);
   border-radius: 5px;
   margin-bottom: 1rem;
   display: flex;
@@ -222,7 +222,7 @@ td:not(:last-of-type) {
 }
 
 .quote.info svg {
-  color: rgb(52, 152, 219);
+  color: var(--accent-blue);
 }
 </style>
 

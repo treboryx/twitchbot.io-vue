@@ -143,7 +143,7 @@
 }
 
 footer {
-  background-color: #06090B;
+  background-color: var(--background-darker);
 }
 
 @media (max-width: 940px) {

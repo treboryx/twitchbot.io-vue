@@ -29,7 +29,7 @@
 
 <style scoped>
 nav {
-  background-color: #54338C;
+  background-color: var(--accent-purple);
   padding: 1rem;
   display: flex;
   flex-flow: row nowrap;

@@ -10,7 +10,7 @@
   line-height: 1.5em !important;
   width: 400px;
   font-size: 13px;
-  background-color: #12191f;
+  background-color: var(--background-dark);
   margin: auto;
   border-radius: 5px;
   max-width: calc(100vw - 5em);

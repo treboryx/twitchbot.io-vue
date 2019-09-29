@@ -9,10 +9,22 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto|Poppins:500|Inconsolata');
 
+:root {
+  --accent-blue: #3498db;
+  --accent-green: #43b581;
+  --accent-purple: #54338C;
+  --background: #17242d;
+  --background-dark: #12191f;
+  --background-darker: #06090B;
+  --background-light: #1A2127;
+  --background-lighter: #283f4f;
+  --text-color: rgba(255,255,255,.7);
+}
+
 body {
   margin: 0;
   color: white;
-  background-color: #17242d;
+  background-color: var(--background);
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
@@ -37,7 +49,7 @@ a {
 }
 
 p, li {
-  color: rgba(255,255,255,.7);
+  color: var(--text-color);
 }
 
 p.standalone {

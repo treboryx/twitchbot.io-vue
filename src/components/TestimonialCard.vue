@@ -13,7 +13,7 @@
 
 <style scoped>
 .ts {
-    background-color: #06090B;
+    background-color: var(--background-darker);
     height: 272px;
     padding: 1rem;
     border-radius: 10px;

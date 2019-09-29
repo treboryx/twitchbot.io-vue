@@ -13,7 +13,7 @@
 
 <style scoped>
 header {
-    background-color: #54338C;
+    background-color: var(--accent-purple);
 }
 
 header .header-container {

@@ -28,7 +28,7 @@
 
 <style>
 footer {
-    background-color: #12191f;
+    background-color: var(--background-dark);
     padding: 1.2rem;
 }
 

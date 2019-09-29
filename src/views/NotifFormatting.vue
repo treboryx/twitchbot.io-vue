@@ -63,7 +63,7 @@
 
 .quote {
   padding: 1rem;
-  background-color: #12191f;
+  background-color: var(--background-dark);
   border-radius: 5px;
   margin-bottom: 1rem;
   display: flex;
@@ -77,7 +77,7 @@
 }
 
 .quote.info svg {
-  color: rgb(52, 152, 219);
+  color: var(--accent-blue);
 }
 
 .quote.warn svg {

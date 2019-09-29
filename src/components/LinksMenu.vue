@@ -23,7 +23,7 @@
 <style scoped>
 .logged-in-ctx {
   padding: .5rem;
-  background-color: #12191f;
+  background-color: var(--background-dark);
   z-index: 10001;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   position: absolute;
@@ -53,7 +53,7 @@
 
 .logged-in-ctx a:hover {
   /* .05 lighter than base menu */
-  background-color: #1A2127;
+  background-color: var(--background-light);
 }
 
 .fade-enter-active, .fade-leave-active {

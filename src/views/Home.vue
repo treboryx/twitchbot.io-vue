@@ -15,11 +15,8 @@
           </Button>
         </p>
       </div>
-      <div class="header-image">
-        <img src="@/assets/discord-mockup.svg">
-      </div>
+      <img class="header-image" src="@/assets/discord-mockup.svg">
     </PageHeader>
-          <TwitchIcon decorative :size="48" />
     <div class="section fcard-list">
       <FeatureCardList>
         <FeatureCard title="Access Twitch from Discord" icon="twitch" icon-alt="Twitch logo">
@@ -114,12 +111,6 @@
 </template>
 
 <style>
-.index-header .main-content {
-  max-width: 500px;
-  text-align: left;
-  flex-grow: 0;
-}
-
 .index-header .header-image, .index-header .header-image img {
   flex: 0 1 470px;
   height: auto;
@@ -154,10 +145,6 @@ footer {
 }
 
 @media (max-width: 940px) {
-  .index-header .header-image {
-    display: none;
-  }
-
   .index-header .main-content {
     text-align: center;
     max-width: none;
@@ -183,11 +170,6 @@ footer {
   }
 }
 
-@keyframes float {
-  0% {top: 0em;}
-  50% {top: 1em;}
-  100% {top: 0em;}
-}
 </style>
 
 <script>

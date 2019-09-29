@@ -14,6 +14,7 @@
 <style scoped>
 header {
     background-color: var(--accent-purple);
+    position: relative;
 }
 
 header .header-container {
@@ -22,13 +23,25 @@ header .header-container {
     margin: auto;
 }
 
+.index-header {
+  overflow-y: hidden;
+  min-height: 650px;
+}
+
 .index-header .header-container {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 3rem .5rem;
+}
+
+.index-header .header-image {
+  max-width: 800px;
+  margin: 1em;
+  z-index: 0;
+}
+
+.index-header .wave-svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 header h1 {
@@ -61,6 +74,8 @@ header p {
 .wave-svg {
     height: 150px;
     overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
 
 .wave-svg svg {

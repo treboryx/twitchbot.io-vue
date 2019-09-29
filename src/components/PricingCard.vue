@@ -27,7 +27,7 @@
 .p-card h4 {
     font: 400 .9em 'Roboto', sans-serif;
     margin: 0;
-    color: rgba(255,255,255,.5);
+    color: var(--text-hint);
 }
 
 .p-card .price {
@@ -43,7 +43,7 @@
 
 .p-card .features span {
     font-size: .9rem;
-    color: rgba(255,255,255,.9);
+    color: var(--text-secondary);
     display: inline-block;
     margin-bottom: .25rem;
 }
@@ -55,7 +55,7 @@
 
 .p-card .button {
     margin: 1.5rem 0 0 0;
-    background-image: linear-gradient(120deg, #5294E9, #AD45F5);
+    background-image: var(--pro-gradient);
     width: 100%;
     text-align: center;
     padding: 10px;

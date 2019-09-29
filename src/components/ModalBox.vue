@@ -56,13 +56,13 @@
 
 .modal-box .modal-title {
   flex-grow: 1;
-  font: 500 1rem 'Poppins', 'Roboto', sans-serif;
+  font: 500 1rem 'Cereal', 'Roboto', sans-serif;
 }
 
 .modal-box .modal-close {
   font-size: 1.5rem;
   line-height: 1rem;
-  color: rgba(255,255,255,.6);
+  color: var(--text-hint);
   cursor: pointer;
   user-select: none;
   -moz-user-select: none;
@@ -73,7 +73,7 @@
 }
 
 .modal-box .modal-text {
-  color: rgba(255,255,255,.8);
+  color: var(--text-secondary);
   font-size: .9rem;
 }
 
@@ -89,7 +89,7 @@
 .modal-box .modal-card .minor {
   font-size: .75rem;
   display: block;
-  color: rgba(255,255,255,.6);
+  color: var(--text-hint);
 }
 </style>
 

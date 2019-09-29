@@ -7,23 +7,35 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto|Poppins:500|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Inconsolata');
+
+@font-face {
+    font-family: "Cereal";
+    font-weight: 500;
+    font-style: normal;
+    src: url("~@/assets/AirbnbCerealBold.woff") format("woff");
+}
 
 :root {
   --accent-blue: #3498db;
-  --accent-green: #43b581;
-  --accent-purple: #54338C;
-  --background: #17242d;
-  --background-dark: #12191f;
-  --background-darker: #06090B;
-  --background-light: #1A2127;
-  --background-lighter: #283f4f;
-  --text-color: rgba(255,255,255,.7);
+  --accent-green: #00c8af;
+  --accent-purple: #9146FF;
+  --accent-yellow: rgb(250, 166, 26);
+  --background: #000000;
+  --background-dark: rgb(24,24,27);
+  --background-darker: rgb(33,33,38);
+  --background-light: rgb(42,42,47);
+  --background-lighter: rgb(51,51,56);
+  --pro-gradient: linear-gradient(120deg, var(--accent-green), var(--accent-purple));
+  --text-primary: #f0f0ff;
+  --text-secondary: rgba(240,240,255,.8);
+  --text-tertiary: rgba(240,240,255,.7);
+  --text-hint: rgba(240,240,255,.5);
 }
 
 body {
   margin: 0;
-  color: white;
+  color: var(--text-primary);
   background-color: var(--background);
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
@@ -49,7 +61,7 @@ a {
 }
 
 p, li {
-  color: var(--text-color);
+  color: var(--text-tertiary);
 }
 
 p.standalone {
@@ -69,15 +81,15 @@ code {
 }
 
 h1 {
-  font: 500 1.75em 'Poppins', 'Roboto', sans-serif;
+  font: 500 1.75em 'Cereal', 'Roboto', sans-serif;
 }
 
 h2 {
-  font: 500 1.5em 'Poppins', 'Roboto', sans-serif;
+  font: 500 1.5em 'Cereal', 'Roboto', sans-serif;
 }
 
 h3 {
-  font: 500 1.25em 'Poppins', 'Roboto', sans-serif;
+  font: 500 1.25em 'Cereal', 'Roboto', sans-serif;
 }
 
 .section {

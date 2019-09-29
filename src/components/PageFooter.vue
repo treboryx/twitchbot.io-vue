@@ -43,7 +43,7 @@ footer span {
 }
 
 footer h3 {
-    font: 500 1.5em "Poppins", "Roboto", sans-serif;
+    font: 500 1.5em "Cereal", "Roboto", sans-serif;
     margin-bottom: 7px;
 }
 

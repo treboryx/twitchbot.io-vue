@@ -68,7 +68,7 @@
   font-size: .8em;
   line-height: 1;
   padding: .5rem;
-  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-family: 'Cereal', 'Roboto', sans-serif;
   text-decoration: none !important;
 }
 </style>

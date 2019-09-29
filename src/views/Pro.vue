@@ -1,8 +1,11 @@
 <template>
   <div>
-    <PageHeader>
+    <PageHeader class="new-header">
       <div class="main-content">
-        <h1>Boost your TwitchBot experience.</h1>
+        <h1 >
+            Boost your TwitchBot experience.
+            <RocketIcon decorative :size="48"/>
+        </h1>
         <h2>Become a TwitchBot Pro with access to exclusive features, faster notifications, and less limits for you and your server.</h2>
         <p style="margin-top:3em">
           <Button default="true" shine="true" href="https://www.patreon.com/join/devakira/checkout?rid=3677518">
@@ -82,6 +85,7 @@ import PricingCard from '@/components/PricingCard.vue'
 
 import CheckIcon from 'mdi/Check.vue'
 import ArrowDownIcon from 'mdi/ArrowDown.vue'
+import RocketIcon from 'mdi/Rocket.vue'
 
 export default {
   components: {
@@ -92,7 +96,8 @@ export default {
     FeatureCard,
     FeatureCardList,
     PageHeader,
-    PricingCard
+    PricingCard,
+    RocketIcon
   }
 }
 </script>

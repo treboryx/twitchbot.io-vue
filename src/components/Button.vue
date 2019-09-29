@@ -11,7 +11,7 @@
   padding: 12px 22px;
   border-radius: 3px;
   background-color: var(--background-lighter);
-  color: rgba(255,255,255,.8);
+  color: var(--text-secondary);
   cursor: pointer;
   white-space: nowrap;
   display: inline-block;
@@ -21,6 +21,7 @@
 
 .button.default {
   background-color: var(--accent-green);
+  color: rgba(0,0,0,.8);
 }
 
 /* Button shine effect */
@@ -53,7 +54,7 @@
   cursor: pointer;
   margin: 6px 8px;
   padding: 12px 0;
-  color: rgba(255,255,255,.6);
+  color: var(--text-primary);
   font-size: .9em;
 }
 

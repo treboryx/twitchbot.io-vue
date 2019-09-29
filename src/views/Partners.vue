@@ -1,7 +1,10 @@
 <template>
   <div>
-    <PageHeader>
-      <h1>Bringing communities together.</h1>
+    <PageHeader class="new-header">
+      <h1>
+          Bringing communities together.
+          <ArrowCollapseRightIcon decorative :size="48" />
+      </h1>
       <h2>Boost your streaming organization or personal server with exclusive TwitchBot features and events.</h2>
       <p style="margin-top:3em">
         <Button default="true" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdyyVe0erZbfbv2iHW1Tiap2Bw_Y2fBkKYv3A5dwx-OKGVqPg/viewform" style="margin-left:0">
@@ -145,12 +148,14 @@ import FeatureCardList from '@/components/FeatureCardList.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import PricingCard from '@/components/PricingCard.vue'
 
+import ArrowCollapseRightIcon from 'mdi/ArrowCollapseRight.vue';
 import ArrowDownIcon from 'mdi/ArrowDown.vue'
 import CheckIcon from 'mdi/Check.vue'
 
 export default {
   components: {
     AccentedArea,
+    ArrowCollapseRightIcon,
     ArrowDownIcon,
     Button,
     CarbonAd,

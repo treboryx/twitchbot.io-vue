@@ -43,13 +43,13 @@ nav a {
 }
 
 nav a.main {
-  font: 500 1em 'Poppins', 'Roboto', sans-serif;
+  font: 500 1em 'Cereal', 'Roboto', sans-serif;
   padding-right: 5px;
 }
 
 nav .links a {
   font-size: .9em;
-  color: rgba(255,255,255,.7);
+  color: var(--text-tertiary);
   padding-left: 12px;
 }
 
@@ -59,14 +59,14 @@ nav .flex-spacer {
 
 nav .right a {
   padding-left: 12px;
-  color: rgba(255,255,255,.9);
+  color: var(--text-secondary);
 }
 
 nav .nav-sep {
   display: inline-block;
   width: 1px;
   height: .9em;
-  background: rgba(255,255,255,.25);
+  background: rgba(240,240,255,.25);
   margin-left: 12px;
 }
 </style>

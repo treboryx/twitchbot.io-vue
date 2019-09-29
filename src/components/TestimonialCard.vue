@@ -50,7 +50,7 @@
 
 .ts .org {
     display: block;
-    color: rgba(255,255,255,.5);
+    color: var(--text-hint);
     font-size: .75rem;
 }
 </style>

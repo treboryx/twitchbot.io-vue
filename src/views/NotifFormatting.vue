@@ -81,7 +81,7 @@
 }
 
 .quote.warn svg {
-  color: rgb(250, 166, 26);
+  color: var(--accent-yellow);
 }
 </style>
 

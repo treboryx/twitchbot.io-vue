@@ -28,7 +28,7 @@
 .brand.github {color: #333; background-color: white;}
 .brand.medium {background-color: black;}
 .brand.patreon {background-color: #f96854;}
-.brand.twitch {background-color: #54338C;}
+.brand.twitch {background-color: var(--accent-purple);}
 .brand.twitter {background-color: #1da1f2;}
 </style>
 

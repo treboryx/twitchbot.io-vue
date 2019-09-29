@@ -1,7 +1,10 @@
 <template>
   <div>
-    <PageHeader>
-      <h1>Help us build a multilingual community</h1>
+    <PageHeader class="new-header">
+      <h1>
+          Help us build a multilingual community.
+          <TranslateIcon decorative :size="48" />
+      </h1>
       <h2>Our goal is to create a community of Twitch users who don't have to worry about the language barrier.</h2>
       <p style="margin-top:3em">
         <Button default="true" target="_blank" href="https://crowdin.com/project/twitchbot" style="margin-left:0">
@@ -92,6 +95,7 @@ import CarbonSidebar from '@/components/CarbonSidebar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 
 import ArrowDownIcon from 'mdi/ArrowDown.vue'
+import TranslateIcon from 'mdi/Translate.vue'
 
 export default {
   components: {
@@ -99,7 +103,8 @@ export default {
     ArrowDownIcon,
     Button,
     CarbonSidebar,
-    PageHeader
+    PageHeader,
+    TranslateIcon
   }
 }
 </script>

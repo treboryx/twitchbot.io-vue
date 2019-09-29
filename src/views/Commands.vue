@@ -169,7 +169,7 @@ details {
 
 summary .title {
   cursor: pointer;
-  font: 500 1em 'Poppins', 'Roboto', sans-serif;
+  font: 500 1em 'Cereal', 'Roboto', sans-serif;
   user-select: none;
   -moz-user-select: none;
 }
@@ -192,13 +192,13 @@ table {
 
 th {
   font-weight: 400;
-  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-family: 'Cereal', 'Roboto', sans-serif;
   text-align: left;
   padding: .5rem;
 }
 
 td {
-  color: rgba(255,255,255,.8);
+  color: var(--text-secondary);
   padding: .3rem .5rem;
 }
 

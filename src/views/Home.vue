@@ -10,9 +10,15 @@
           <Button default="true" shine="true" @click.native="openBotInvite()">
             Add to Discord
           </Button>
-          <Button href="https://support.twitchbot.io" target="_blank">
-            Support Website
+          <Button href="https://dash.twitchbot.io" target="_blank">
+            Dashboard
           </Button>
+          <span>
+            Need help with TwitchBot? Visit our
+            <a href="https://discord.gg/UNYzJqV" target="_blank">Discord server</a>
+            or the
+            <a href="https://support.twitchbot.io" target="_blank">support website</a>.
+          </span>
         </p>
       </div>
       <img class="header-image" src="@/assets/discord-mockup.svg">
@@ -111,6 +117,16 @@
 </template>
 
 <style>
+.index-header span {
+  display: block;
+  margin-left: 8px;
+  color: var(--text-tertiary);
+}
+
+.index-header span a {
+  text-decoration: underline;
+}
+
 .index-header .header-image, .index-header .header-image img {
   flex: 0 1 470px;
   height: auto;
